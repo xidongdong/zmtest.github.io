@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+</head>
+<style>
+
+    *{
+        padding:0;
+        margin:0;
+        list-style:none;
+        text-decoration:none;
+    }
+    .box{
+        width:100%;
+    }
+    header .div1{
+        width:100%;
+        height:6.2rem;
+        background:url(img1/a1.jpg);
+        background-size:cover;
+    }
+    nav ul{
+        width:100%;
+        height:1.8rem;
+        background:#000;
+    }
+    nav ul li{
+        float: left;
+    }
+    nav a{
+        font-size:0.675rem;
+        color:#fff;
+    }
+    nav .one,nav .last{
+        width:1rem;
+        height:100%;
+    }
+    nav li{
+        width:3.42rem;
+        height:100%;
+        text-align:center;
+        line-height:1.8rem;
+        border-right:1px solid #262626;
+    }
+    .banner{
+        width:100%;
+        height:15rem;
+        background:url(img1/a3.png);
+        background-size:cover;
+    }
+     section{
+        width:100%;
+        height:2.3rem;
+        background:#000;
+         position: relative;
+    }
+    section h2,section p{
+        color:#fff;
+    }
+    section h2{
+        font-size:1rem;
+        font-weight:normal;
+        position: absolute;
+        left:0.575rem;
+        top:25%;
+    }
+    section p{
+        font-size:0.625rem;
+        font-weight:normal;
+        position: absolute;
+        right:0.675rem;
+        top:1.325rem;
+    }
+    .con{
+        width:100%;
+        height:7.675rem;
+    }
+    .con li{
+        width:100%;
+        height:2.5rem;
+        border-bottom:1px solid #ccc;
+        line-height:2.5rem;
+        padding-left:0.325rem;
+        position: relative;
+    }
+    .con span{
+        width:0.425rem;
+        height:0.6rem;
+        background:url(img1/btn.jpg);
+        background-size:cover;
+        position: absolute;
+        right:0.55rem;
+        top:0.95rem;
+    }
+    .con i{
+        width:0.575rem;
+        height:0.875rem;
+        background:url(img1/b1.png);
+        background-size:cover;
+        position: absolute;
+        right:262px;
+        top:1rem;
+    }
+    article{
+        width:100%;
+        height:6.675rem;
+        position: relative;
+        border-bottom:1px solid #ccc;
+    }
+    .pc1{
+        width:5.9rem;
+        height:5.9rem;
+        background:url(img1/a5_05.png);
+        background-size:cover;
+        position: absolute;
+        left:0.3rem;
+        top:0.45rem;
+    }
+    .art{
+        width:8.5rem;
+        height:3.5rem;
+        position: absolute;
+        right:1rem;
+        top:0.575rem;
+    }
+    .art h3{
+        font-size:0.75rem;
+
+    }
+    .art p{
+        font-size:0.65rem;
+        line-height:1rem;
+    }
+    .art span{
+        width:0.425rem;
+        height:0.6rem;
+        background:url(img1/btn.jpg);
+        background-size:cover;
+        position: absolute;
+        right:0.1rem;
+        top:4rem;
+    }
+    .div2{
+        width:100%;
+        height:16.2rem;
+        position: relative;
+    }
+    .div2 h2{
+        font-size:0.75rem;
+        color:red;
+        position: absolute;
+        top:0.55rem;
+        left:0.35rem;
+    }
+    .div2 .con1{
+        width: 15.275rem;
+        height:4.235rem;
+        font-size:0.75rem;
+        line-height:1.1rem;
+        margin:0 auto;
+        position: absolute;
+        top:2.575rem;
+        left:0.35rem;
+    }
+
+    .div2 .con2{
+        width: 15.275rem;
+        height:4.235rem;
+        font-size:0.75rem;
+        line-height:1.1rem;
+        margin:0 auto;
+        position: absolute;
+        left:0.35rem;
+        bottom:1.825rem;
+    }
+    /*===========================================================*/
+
+    /*=============================================*/
+    .bac{
+        width:100%;
+        height:4.25rem;
+        position: relative;
+        overflow: hidden;
+
+    }
+.bac .right{
+    width:50%;
+    height:100%;
+    background: #04040a;
+    float: left;
+    position: relative;
+}
+    .bac .left{
+        width:50%;
+        height:100%;
+        background: #04040a;
+        float: left;
+    }
+
+    .left .lo, .right .lo{
+        width:0.325rem;
+        height:0.4rem;
+        background:url(img1/b2_17.png);
+        background-size:cover;
+        position: absolute;
+        left:0.23rem;
+        top:0.875rem;
+    }
+    .left .left-pc{
+        width:3.925rem;
+        height:3.3rem;
+        background:url(img1/c1.jpg);
+        background-size:cover;
+        position: absolute;
+        left:0.625rem;
+        top:0.625rem;
+    }
+
+    .left .bac-2, .right .bac-2{
+        width:2.65rem;
+        height:2.65rem;
+        position: absolute;
+        left:4.65rem;
+        top:1.225rem;
+    }
+    .left .bac-2-1 ul,.right .bac-2-1 ul{
+        width:2.8rem;
+        height:1.25rem;
+        position: absolute;
+       top:1.4rem;
+        left:0;
+    }
+    .left .bac-2-1 ul li,.right .bac-2-1 ul li{
+        font-size:0.3rem;
+        color:#959595;
+    }
+    .left .bac-2-p ul,.right .bac-2-p ul{
+        width:2.4rem;
+        height:1.1rem;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    .left .bac-2-p ul li,.right .bac-2-p ul li{
+        font-size:0.5rem;
+        color:#fff;
+    }
+    /*==============*/
+    .right .left-pc{
+        width:3.925rem;
+        height:3.3rem;
+        background:url(img1/c2.jpg);
+        background-size:cover;
+        position: absolute;
+        left:0.625rem;
+        top:0.625rem;
+    }
+    /*==============*/
+    .essay{
+        width:100%;
+        height:4.9rem;
+        overflow: hidden;
+    }
+    .essay1{
+        width:15.1rem;
+        height:3.175rem;
+        margin:0 auto;
+        margin-top:0.55rem;
+        position: relative;
+    }
+    .essay-pc{
+        width:0.45rem;
+        height:0.45rem;
+        background:red;
+        position: absolute;
+        left:0;
+        top:0.6rem;
+    }
+    .essay1 p{
+        color:#959595;
+        font-size:0.625rem;
+        line-height:1.2rem;
+    }
+    .last{
+        width:100%;
+        height:9.825rem;
+        position: relative;
+        border-top:1px solid #000;
+    }
+    .last ul{
+        width:10.75rem;
+        height:4.7rem;
+        position: absolute;
+        top:0.7rem;
+        left:1.55rem;
+    }
+    .last ul li{
+        font-size:0.625rem;
+        color:#959595;
+    }
+    .last p{
+        font-size:0.625rem;
+        position: absolute;
+        bottom:1.95rem;
+        left:0.325rem;
+    }
+    .last span{
+        width:2.425rem;
+        font-size:0.625rem;
+        position: absolute;
+        bottom:1rem;
+        left:50%;
+    }
+    footer{
+        width:100%;
+        height:2.25rem;
+        background:#2c2c2c;
+        overflow: hidden;
+    }
+    footer ul li{
+        width:3.2rem;
+        height:2.25rem;
+        border-right:1px solid #1f1f1f;
+        float:left;
+        position: relative;
+        box-sizing: border-box;
+
+    }
+    .fot li span{
+        width:1.225rem;
+        height:0.9rem;
+        position: absolute;
+        left:50%;
+        top:0.1rem;
+        margin-left:-0.5625rem;
+    }
+    .fot li p{
+        font-size:0.5rem;
+        text-align: center;
+        padding-top:1.375rem;
+        color:#fff;
+    }
+
+</style>
+    <script>
+    ;(function(win, doc){
+        function change(){
+            doc.documentElement.style.fontSize=20*doc.documentElement.clientWidth/320+'px';
+        }
+        change()
+
+        win.addEventListener('resize', change, false);
+    })(window, document);
+</script>
+<body>
+ <div class="box">
+     <header>
+         <div class="div1"></div>
+     </header>
+     <nav>
+         <ul>
+             <li class="one" style="border-left:1px solid #262626;">＜</li>
+             <li><a href="javascript:;">首页</a></li>
+             <li><a href="javascript:;">关于我们</a></li>
+             <li><a href="javascript:;">品牌展示</a></li>
+             <li><a href="javascript:;">商城优惠</a></li>
+             <li class="last" style="border:none;">＞</li>
+         </ul>
+     </nav>
+     <div class="banner"></div>
+     <section>
+         <h2>商城优惠</h2>
+         <p>您的气质专家</p>
+     </section>
+     <ul class="con">
+         <li>1111111111111<span></span></li>
+         <li>22222222222 <span > </span></li>
+         <li>333333333333333<span></span></li>
+     </ul>
+     <section>
+         <h2>品牌专家</h2>
+         <p>您的气质专家</p>
+     </section>
+     <article>
+        <ul>
+            <li class="pc1"></li>
+            <li class="art">
+                <h3>产品展示A(3张)</h3>
+                <p>展品展示展品展示展品展示
+                    展品展示展品展示展品展示
+                    展品展示展品展示展品展示
+                    展品展示展品展示展品展示
+                 </p>
+                <span></span>
+            </li>
+        </ul>
+     </article>
+
+     <article>
+         <ul>
+             <li class="pc1" style="background:url(img1/a4_08.png);background-size:cover;"></li>
+             <li class="art">
+                 <h3>产品展示A(3张)</h3>
+                 <p>展品展示展品展示展品展示
+                     展品展示展品展示展品展示
+                     展品展示展品展示展品展示
+                     展品展示展品展示展品展示
+                 </p>
+                 <span></span>
+             </li>
+         </ul>
+     </article>
+     <section>
+         <h2>品牌优势</h2>
+         <p>您的气质专家</p>
+     </section>
+
+     <article class="div2">
+       <h2>花开了花开了，艺术家原创品牌的六大优势</h2>
+        <p class="con1">1.
+            花开了花开了花开了花开了
+            花开了花开了花开了花开了
+            花开了花开了花开了花开了
+            花开了花开了花开了花开了
+            花开了花开了花开了花开了
+            花开了花开了花开了花开了
+            花开了花开了花开了花开了
+
+        </p>
+         <div class="con2">6.
+             花开了花开了花开了花开了
+             花开了花开了花开了花开了
+             花开了花开了花开了花开了
+             花开了花开了花开了花开了
+             花开了花开了花开了花开了
+             花开了花开了花开了花开了
+             花开了花开了花开了花开了
+
+         </div>
+     </article>
+     <section class="bac">
+         <div class="left">
+             <div class="lo"></div>
+             <div class="left-pc"></div>
+             <ul class="bac-2">
+                <li class="bac-2-p">
+                    <ul>
+                        <li>TEE</li>
+                        <li>马上行动</li>
+                    </ul>
+                </li>
+                 <li class="bac-2-1">
+                     <ul>
+                         <li>花开了花开了</li>
+                         <li>轻轻演绎</li>
+                         <li>独到的富士美学</li>
+                     </ul>
+                 </li>
+             </ul>
+         </div>
+         <div class="right">
+             <div class="lo"></div>
+             <div class="left-pc"></div>
+             <ul class="bac-2">
+                 <li class="bac-2-p">
+                     <ul>
+                         <li>TEE</li>
+                         <li>马上行动</li>
+                     </ul>
+                 </li>
+                 <li class="bac-2-1">
+                     <ul>
+                         <li>花开了花开了</li>
+                         <li>轻轻演绎</li>
+                         <li>独到的富士美学</li>
+                     </ul>
+                 </li>
+             </ul>
+         </div>
+     </section>
+     <section>
+         <h2>顾客群体</h2>
+         <p>您的气质专家</p>
+     </section>
+     <ul class="essay">
+       <div class="essay1">
+           <span class="essay-pc"></span>
+           <ul>
+               <p>&nbsp;您的气质专家您的气质专家您的气质专家您的气质专家您的气质专家您的气质专家
+                   您的气质专家您的气质专家您的气质专家
+               </p>
+           </ul>
+       </div>
+     </ul>
+     <article class="last">
+         <ul>
+             <li>111111111</li>
+             <li>22222222222</li>
+             <li>2333333333333333</li>
+             <li>444444444444</li>
+             <li>555555555555</li>
+         </ul>
+         <p>温馨提示温馨提示温馨提示温馨提示温馨提示温馨提111</p>
+         <span>站无关</span>
+     </article>
+     <footer>
+         <ul class="fot">
+             <li>
+                 <span style="background:url(img1/c2.png);background-size:cover;"></span>
+                 <p>电话</p>
+             </li>
+             <li>
+                 <span style="background:url(img1/c3.png);background-size:cover;"></span>
+                 <p>留言</p>
+             </li>
+             <li>
+                 <span style="background:url(img1/c4.png);background-size:cover;"></span>
+                 <p>关注</p>
+             </li>
+             <li>
+                 <span style="background:url(img1/c5.png);background-size:cover;"></span>
+                 <p>地图</p>
+             </li>
+             <li>
+                 <span style="background:url(img1/c1.png);background-size:cover;"></span>
+                 <p>分享</p>
+             </li>
+         </ul>
+
+     </footer>
+
+
+ </div>
+</body>
+</html>
