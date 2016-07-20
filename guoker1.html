@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title></title>
+</head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        list-style:none;
+        text-decoration: none;
+        color:#000;
+    }
+    .box header{
+        width:100%;
+        height:2.5rem;
+        background:#262626;
+        border-bottom:3px solid #49caac;
+        display:block; content:''; clear:both;
+    }
+    header menu,header div,header h4{
+       width:2rem;
+       height:2.5rem;
+       float: left;
+    }
+    header menu{
+        background:url("img/menu.jpg");
+        background-size:cover;
+    }
+    header h4{
+        background:url("img/pc.jpg");
+        background-size:cover;
+        position: absolute;
+        right:0;
+        top:0;
+    }
+    header div{
+        width:12rem;
+        height:2.5rem;
+        text-align:center;
+        line-height:2.5rem;
+        color:#fff;
+
+    }
+    .user{
+        width:100%;
+        height:2.125rem;
+        background:#fafafa;
+        position: relative;
+    }
+    .user div{
+        width:1.6rem;
+        height:1.6rem;
+    }
+    .user .name{
+        width:5.2rem;
+        height:1.6rem;
+        border-right:1px solid #e0e0e0;
+        position: absolute;
+        left:1.425rem;
+        top:0.15rem;
+        padding-right:1.625rem;
+        overflow: hidden;
+    }
+    .user .name div{
+        background:url(img/a1.png);
+        background-size:cover;
+        float: left;
+    }
+    .user .name span{
+        float: right;
+        text-decoration:none;
+        font-size:0.75rem;
+        color:#c2c1c7;
+        line-height:1.6rem;
+    }
+    .user .login{
+        width:5.2rem;
+        height:1.6rem;
+        position: absolute;
+        right:1.5rem;
+        top:0.15rem;
+        overflow: hidden;
+    }
+    .user .login div{
+        background:url(img/a2.png);
+        background-size:cover;
+        float: left;
+    }
+    .user .login span{
+        float: right;
+        text-decoration:none;
+        font-size:0.75rem;
+        color:#c2c1c7;
+        line-height:1.6rem;
+    }
+    /*图片*/
+    figure p{
+        width:100%;
+        height:7.825rem;
+        background:url(img/banner.jpg);
+        background-size:cover;
+    }
+     #art{
+        width:100%;
+        height:14.275rem;
+        border-bottom:3px solid #c0fff7;
+    }
+    #art ul{
+        width:15.225rem;
+        height:5.85rem;
+        margin: 0 auto;
+    }
+    #art ul li{
+        height:1.985rem;
+        line-height:1.975rem;
+        border-bottom:1px solid #ccc;
+        padding-left:4px;
+        font-size:0.65rem;
+    }
+    .div1{
+        width:100%;
+        height:2rem;
+        border-bottom:1px solid #ccc;
+        position: relative;
+        background:#fafafa;
+    }
+    .div1 .pc{
+        width:1.475rem;
+        height:1.475rem;
+        background:url(img/a3.png);
+        background-size:cover;
+        position: absolute;
+        right:0.75rem;
+        top:0.225rem;
+    }
+    .div1 .say{
+        font-size:0.75rem;
+        line-height:2rem;
+        position: absolute;
+        left:0.75rem;
+        top:0;
+    }
+    .nv{
+        width:100%;
+        height:16.8rem;
+        border-bottom:3px solid #71afae;
+    }
+    .nv .nv-1{
+        height:2.075rem;
+        border-bottom:1px solid #ccc;
+    }
+    .nv .nv-1 li{
+        float: left;
+        line-height:2.075rem;
+        font-size:0.75rem;
+        padding-right:1.75rem;
+    }
+    .nv-1 .active{
+        width:2.4rem;
+        border-bottom:3px solid #ff2416;
+    }
+    .nv-1 .active a{
+        margin-left:0.75rem;
+    }
+    .nv-2 .con1{
+        width:15.225rem;
+        height:6.5rem;
+        border-bottom:1px solid #ccc;
+        margin:0 auto;
+        position: relative;
+    }
+    .con1 h2{
+        font-size:0.75rem;
+        font-weight:normal;
+        position: absolute;
+        top:0.675rem;
+        left:0.25rem;
+
+    }
+    .con1 .left{
+        width:5.255rem;
+        height:3.75rem;
+        background:url("img/a5.jpg");
+        background-size:cover;
+        position: absolute;
+        top:2rem;
+        left:0.25rem;;
+    }
+    .con1 .right{
+        width:8.375rem;
+        height:3.25rem;
+        font-size:0.65rem;
+        position: absolute;
+        right:0.55rem;
+        top:2.25rem;
+    }
+    .con2{
+        width:15.225rem;
+        height:8.125rem;
+        margin:0 auto;
+    }
+    .con2 ul li{
+        height:2rem;
+        line-height:1.975rem;
+        border-bottom:1px solid #ccc;
+        padding-left:4px;
+    }
+    footer{
+        width:100%;
+        height:3rem;
+        background:#fafafa;
+        border-bottom:3px solid #50cdab;
+        position: relative;
+    }
+    footer ul{
+        width:5.4rem;
+        height:1.575rem;
+        clear: both;
+        position: absolute;
+        left:50%;
+        top:50%;
+        margin-left:-2.7rem;
+        margin-top:-0.7875rem;
+    }
+    footer ul .fot1{
+        width:1.55rem;
+        height:1.45rem;
+        background:url(img/a6.png);
+        background-size:cover;
+        float: left;
+    }
+    footer ul .fot2{
+        font-size:0.75rem;
+        line-height:1.575rem;
+        float: right;
+    }
+
+
+</style>
+<script>
+    ;(function(win, doc){
+        function change(){
+            doc.documentElement.style.fontSize=20*doc.documentElement.clientWidth/320+'px';
+        }
+        change()
+        
+        win.addEventListener('resize', change, false);
+    })(window, document);
+</script>
+<body>
+   <div class="box">
+        <header>
+            <menu></menu>
+            <div>Guokr.com</div>
+            <h4></h4>
+        </header>
+       <section>
+          <ul class="user">
+              <li class="name">
+                  <div></div>
+                  <span>用户登录</span>
+              </li>
+              <li class="login">
+                  <div></div>
+                  <span>用户注册</span>
+              </li>
+          </ul>
+       </section>
+       <figure>
+           <p></p>
+       </figure>
+       <article>
+           <div id="art">
+               <ul>
+                   <li>11111111111111</li>
+                   <li>222222222222</li>
+                   <li>22222233333333333</li>
+                   <li>4444444444444444</li>
+                   <li>4455555555555555</li>
+                   <li>66666666666666666666</li>
+                   <li style="border-bottom:0;">7777777777777777</li>
+               </ul>
+           </div>
+       </article>
+       <div class="div1">
+           <ul>
+               <li class="say">热门回答</li>
+               <li class="pc"></li>
+           </ul>
+       </div>
+       <article class="nv">
+           <ul class="nv-1">
+               <li class="active"><a href="javascript:;">科技</a></li>
+               <li><a href="javascript:;">生活</a></li>
+               <li><a href="javascript:;">人文</a></li>
+               <li><a href="javascript:;">自然</a></li>
+           </ul>
+           <ul class="nv-2">
+               <li class="con1">
+                   <h2>如果把彗星撞到地球上怎么办？</h2>
+                   <div class="left"></div>
+                   <div class="right">
+                       <p>111111111111</p>
+                       <p>111111111111</p>
+                       <p>111111111111</p>
+                   </div>
+               </li>
+               <li class="con2">
+                   <ul>
+                       <li>1111111111111111</li>
+                       <li>22222222222222222</li>
+                       <li>222333333333333333</li>
+                       <li style="border-bottom:none;">333444444444444444444</li>
+                   </ul>
+               </li>
+           </ul>
+
+       </article>
+
+
+
+      <!--==============================================-->
+       <div class="div1">
+           <ul>
+               <li class="say">小组热帖</li>
+               <li class="pc"></li>
+           </ul>
+       </div>
+       <article class="nv" style="border-bottom:1px solid #ccc;">
+           <ul class="nv-1">
+               <li class="active"><a href="javascript:;">科技</a></li>
+               <li><a href="javascript:;">生活</a></li>
+               <li><a href="javascript:;">人文</a></li>
+               <li><a href="javascript:;">自然</a></li>
+           </ul>
+           <ul class="nv-2">
+               <li class="con1">
+                   <h2>人文地理环境的顶顶顶顶顶？</h2>
+                   <div class="left" style="background:url(img/a7.jpg);background-size:cover;"></div>
+                   <div class="right">
+                       <p>111111111111</p>
+                       <p>111111111111</p>
+                       <p>111111111111</p>
+                   </div>
+               </li>
+               <li class="con2">
+                   <ul>
+                       <li>1111111111111111</li>
+                       <li>22222222222222222</li>
+                       <li>222333333333333333</li>
+                       <li style="border-bottom:none;">333444444444444444444</li>
+                   </ul>
+               </li>
+           </ul>
+
+       </article>
+       <footer>
+          <ul>
+              <li class="fot1"></li>
+              <li class="fot2">回到顶部</li>
+          </ul>
+       </footer>
+
+
+   </div>
+
+</body>
+</html>
